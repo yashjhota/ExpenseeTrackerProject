@@ -1,0 +1,29 @@
+I want to build [idea]. Ask me questions to help define the scope, then draft a CLAUDE.md from my answers.”
+
+[ Example for CLAUDE.md
+
+    # Project: TempleConnect
+
+Multi-tenant booking app. React + TypeScript frontend, Supabase backend.
+
+## Commands
+- Install: `npm install`
+- Dev server: `npm run dev`
+- Tests: `npm test`
+- Lint: `npm run lint`
+
+## Conventions
+- Use functional components and hooks only
+- Styling with Tailwind; no inline styles
+- All DB access goes through `src/lib/db.ts`
+
+## Rules
+- Run lint and tests before saying a task is done
+- Never edit files in `src/generated/`
+- Ask before adding new dependencies
+
+## Gotchas
+- Row-level security is enabled; new tables need policies
+- `.env.local` is required to run locally (see `.env.example`)
+
+]
