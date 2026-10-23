@@ -115,6 +115,15 @@ No scheduler and no network, so recurring items are **generated on app startup**
 - FX conversion
 - Mobile-responsive / PWA
 
+## Workflow (spec-driven)
+- No code without an approved spec and plan in specs/<NN-feature>/
+- Flow: /spec → /plan → /tasks → /implement → /ship. Stop for my approval after each.
+- One feature = one git branch (feat/<name>) = one PR
+- Implement ONE task at a time; run `pytest` and `ruff check .` before marking it done
+- Commit after each task using Conventional Commits (feat:, fix:, test:, docs:, chore:)
+- Never push to main. Never force-push. Never commit instance/ or .env
+- If code and spec disagree, stop and ask
+
 ## How to use this CLAUDE.md
 
 This is the single source of truth for the project's scope and stack. Before writing code, check here. If you want to change the framework, add auth, or move to cloud storage, edit this file first and we'll agree on the change before implementing.
